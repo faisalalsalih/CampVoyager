@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Button from '@/components/Button'
 
 const Hero = () => {
   return (
@@ -37,13 +38,52 @@ const Hero = () => {
           </div>
 
           <p className='bold-16 lg:bold-20 text-blue-70'>
-            198k
-            <span> Excellent Reviews</span>
+            198k 
+          <span className='regular-16 lg:regular-20 ml-4 underline'>Excellent Reviews</span>
           </p>
         </div>
+
+        <div className='flex flex-col w-full gap-3 sm:flex-row'>
+          <Button type='submit' title='Download App' variant='btn_green'/>
+          <Button type='submit' title='How we work?' icon='/play.svg' variant='btn_white_text'/>
+        </div>
         </div>
 
+        <div className='relative flex flex-1 items-start border-2 border-blue-500'>
 
+          <div className="relative flex z-20 w-[286px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
+            
+            <div className="flex flex-col">
+              <div className="flexBetween">
+                <p className='regular-16 text-gray-20'>Location</p>
+                <Image src="/close.svg" alt='close' width={24} height={24} />
+              </div>
+              <p className='bold-20 text-white'>Aguas Calientus</p>
+
+            </div>
+
+
+            <div className='flexBetween'>
+
+                <div className="flex flex-col">
+                  <p className='regular-16 block text-gray-20'>Distance</p>
+                  <p className='bold text-white'>173.28 mi</p>
+                </div>
+
+
+
+                <div className="flex flex-col">
+                  <p className='regular-16 block text-gray-20'>Elevation</p>
+                  <p className='bold text-white'>2.040 km</p>
+                </div>
+
+                
+              </div>
+
+
+          </div>
+          
+        </div>
       </section>
     </>
   )
