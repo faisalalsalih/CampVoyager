@@ -14,7 +14,7 @@ const Hero = () => {
 
         <Image src="/camp.svg" alt='camp' width={50} height={50} className='absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]'/>
 
-        <h1 className='bold-52 lg:bold-88'>Putuk Truno Camp Area</h1>
+        <h1 className='bold-52 lg:bold-88 mt-2'>Putuk Truno Camp Area</h1>
 
         <p className='regular-16 mt-6 text-gray-500 xl:max-w-[520px]'>
           We want to be on each of your journeys seeking the
@@ -47,17 +47,21 @@ const Hero = () => {
           <Button type='submit' title='Download App' variant='btn_green'/>
           <Button type='submit' title='How we work?' icon='/play.svg' variant='btn_white_text'/>
         </div>
+
         </div>
 
+        {/* RIGHT SIDE */}
         <div className='relative flex flex-1 items-start border-2 border-blue-500'>
 
           <div className="relative flex z-20 w-[286px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
             
             <div className="flex flex-col">
+
               <div className="flexBetween">
                 <p className='regular-16 text-gray-20'>Location</p>
                 <Image src="/close.svg" alt='close' width={24} height={24} />
               </div>
+              
               <p className='bold-20 text-white'>Aguas Calientus</p>
 
             </div>
@@ -82,7 +86,7 @@ const Hero = () => {
 
 
           </div>
-          
+
         </div>
       </section>
     </>
